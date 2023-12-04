@@ -24,24 +24,24 @@ Here's the question:
 
 
 class FastAPISettings(BaseSettings):
-    mongo_uri: str = 'mongodb://localhost:27017/'
-    mongo_db_name: str = 'documentation'
+    mongo_uri: str = "mongodb://localhost:27017/"
+    mongo_db_name: str = "documentation"
     port: int = 8000
-    host: str = '0.0.0.0'
+    host: str = "0.0.0.0"
     debug_mode: bool = False
 
 
 class AISettings(FastAPISettings):
     # Model details
-    vector_embedding_model: str = 'text-embedding-ada-002'
-    vector_embedding_key: str = 'text'
-    qa_model: str = 'gpt-3.5-turbo'
+    vector_embedding_model: str = "text-embedding-ada-002"
+    vector_embedding_key: str = "text"
+    qa_model: str = "gpt-3.5-turbo"
     documentation_sources: t.Sequence[str] = (
-        'langchain',
-        'superduperdb',
-        'huggingface',
+        "langchain",
+        "superduperdb",
+        "huggingface",
     )
-    repo_config_path = '.default_repo_config.json'
+    repo_config_path = ".default_repo_config.json"
 
     # Query configuration
     nearest_to_query: int = 5
