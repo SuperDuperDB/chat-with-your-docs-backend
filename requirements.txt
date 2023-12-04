@@ -1,0 +1,6 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.2
+superduperdb==0.0.20
+openai==1.1.2
+python-dotenv==1.0.0

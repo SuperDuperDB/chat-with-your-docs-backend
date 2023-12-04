@@ -1,0 +1,5 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.2
+superduperdb==0.0.19
+# git+https://github.com/SuperDuperDB/superduperdb.git@a1493ae8214f14799e53f35c1283091fe14b3af1
