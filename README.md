@@ -1,4 +1,4 @@
-# FastAPI Chat with Docs App Tutorial
+# FastAPI Chat with Docs Apps Tutorial
 
 This tutorial will guide you through setting up a basic FastAPI application for handling questions with documentation. The tutorial covers both local development and deployment to the Fly.io platform.
 
