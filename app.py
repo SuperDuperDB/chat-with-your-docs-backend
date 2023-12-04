@@ -19,24 +19,6 @@ from superduperdb.ext.openai import OpenAIChatCompletion
 # It just super dupers your database
 db = superduper(mongodb_uri)
 
-PROMPT_LINE = '\
-NOTE: Try to answer as much in line with the context as possible. \
-Only provide an answer if you think the provided context enables you to \
-formulate a sufficient answer. \
-If the provided context is not sufficient or irrelevant to the query, please respond \
-with "I have no sufficient answer based on the information available. Sorry.", \
-if the query is like `hello`, `hi`, `how are you`, etc. please respond to it.'
-
-PROMPT = f"""\
-Given the following context {{context}},
-please try to answer the question given below.
-
-{PROMPT_LINE}
-
-Here's the question:
-"""
-
-
 # Define the prompt for the OpenAIChatCompletion model
 prompt = (
     "Use the following description and code snippets about SuperDuperDB to answer this question about SuperDuperDB\n"
