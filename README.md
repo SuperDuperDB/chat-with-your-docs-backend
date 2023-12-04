@@ -152,7 +152,7 @@ flyctl launch
 To update your deployment regularly, use the following command:
 
 ```bash
-flyctl deploy # Add "--local-only" if you want to build locally instead of flyctls buggy remote set up 
+flyctl deploy # Add "--local-only" if you want to build locally instead of flyctls remote set up 
 ```
 
 That's it! You've successfully set up a FastAPI application for handling questions with documentation, and you have the option to deploy it locally, with Docker, or on the Fly.io platform. Feel free to explore and modify the application according to your needs.
