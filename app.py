@@ -1,3 +1,4 @@
+import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -79,4 +80,4 @@ async def show(payload: Query):
         context_key="txt",
     )
 
-    return {"answer": output.content, "source_urls": ["https://docs.superduperdb.com"]}
+    return {"answer": output.content, 'context': [r['link'] for r in context]}
